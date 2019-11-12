@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Personne} from '../Model/personne';
 
 @Component({
@@ -8,6 +8,7 @@ import {Personne} from '../Model/personne';
 })
 export class ListComponent implements OnInit {
   personnes: Personne[];
+  @Output() forwardSelectedPersonne = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
@@ -15,6 +16,12 @@ export class ListComponent implements OnInit {
       new Personne(1, 'sellaouti', 'aymen', 37, 77777, 'teacher', 'as.jpg'),
       new Personne(2, 'as', 'as', 26, 77777, 'teacher', 'as.jpg')
     ];
+  }
+
+  selectPersonne(personne: Personne) {
+    this.forwardSelectedPersonne.emit(
+      personne
+    );
   }
 
 }

@@ -11,6 +11,9 @@ import { CardComponent } from './card/card.component';
 import { PereComponent } from './pere/pere.component';
 import { FilsComponent } from './fils/fils.component';
 import { ListComponent } from './cv/list/list.component';
+import { ItemComponent } from './cv/item/item.component';
+import { DetailComponent } from './cv/detail/detail.component';
+import { CvComponent } from './cv/cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ListComponent } from './cv/list/list.component';
     CardComponent,
     PereComponent,
     FilsComponent,
-    ListComponent
+    ListComponent,
+    ItemComponent,
+    DetailComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
