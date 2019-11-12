@@ -14,6 +14,7 @@ import { ListComponent } from './cv/list/list.component';
 import { ItemComponent } from './cv/item/item.component';
 import { DetailComponent } from './cv/detail/detail.component';
 import { CvComponent } from './cv/cv/cv.component';
+import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CvComponent } from './cv/cv/cv.component';
     ListComponent,
     ItemComponent,
     DetailComponent,
-    CvComponent
+    CvComponent,
+    NgstyleComponent
   ],
   imports: [
     BrowserModule,
