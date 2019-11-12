@@ -10,6 +10,7 @@ import {FormsModule} from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { PereComponent } from './pere/pere.component';
 import { FilsComponent } from './fils/fils.component';
+import { ListComponent } from './cv/list/list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FilsComponent } from './fils/fils.component';
     ColorComponent,
     CardComponent,
     PereComponent,
-    FilsComponent
+    FilsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
