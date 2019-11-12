@@ -1,0 +1,13 @@
+div {
+  width: 150px;
+  height: 150px;
+  border: 1px solid blue;
+  padding: 50px;
+  color: white;
+  background-color: black;
+}
+
+.ampoule {
+  color: black;
+  background-color: yellow;
+}

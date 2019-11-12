@@ -9,6 +9,7 @@ export class NgstyleComponent implements OnInit {
   @Input() color = 'blue';
   @Input() bg = 'white';
   font = 'Times new roman';
+  size = 20;
   constructor() { }
 
   ngOnInit() {

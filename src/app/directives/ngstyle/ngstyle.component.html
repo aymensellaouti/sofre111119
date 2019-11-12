@@ -1,7 +1,23 @@
 <p [ngStyle]="{
   color: color,
   backgroundColor: bg,
-  fontFamily: font
+  fontFamily: font,
+  fontSize: size+'px'
 }">
   ngstyle works!
 </p>
+<div class="row">
+  <div class="col-md-4">
+    <input type="color" [(ngModel)]="color" class="form-control">
+  </div>
+  <div class="col-md-4">
+    <input type="number" [(ngModel)]="size" class="form-control">
+  </div>
+  <div class="col-md-4">
+    <select [(ngModel)]="font" class="form-control">
+      <option value="verdana">Verdana</option>
+      <option value="arial">Arial</option>
+      <option value="garamond">Garamond</option>
+    </select>
+  </div>
+</div>
