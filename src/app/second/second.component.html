@@ -1,0 +1,7 @@
+<p (click)="disableEnable()">second works!</p>
+
+<button class="btn-primary" [disabled]="isDisabled">
+  PropertyBinding Test
+</button>
+
+<input type="text" #monInput (change)="logguer(monInput.value)">
