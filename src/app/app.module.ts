@@ -21,6 +21,9 @@ import { RainbowDirective } from './directives/rainbow.directive';
 import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { TodoComponent } from './todo/todo.component';
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
+import { HeaderComponent } from './header/header.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { ParamsComponent } from './params/params.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { EmbaucheComponent } from './cv/embauche/embauche.component';
     RainbowDirective,
     DefaultImagePipe,
     TodoComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    HeaderComponent,
+    RouterSimulatorComponent,
+    ParamsComponent
   ],
   imports: [
     BrowserModule,
