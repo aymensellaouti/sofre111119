@@ -18,6 +18,8 @@ import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
 import { NgclassComponent } from './directives/ngclass/ngclass.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
+import { DefaultImagePipe } from './pipes/default-image.pipe';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { RainbowDirective } from './directives/rainbow.directive';
     NgstyleComponent,
     NgclassComponent,
     HighlightDirective,
-    RainbowDirective
+    RainbowDirective,
+    DefaultImagePipe,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
