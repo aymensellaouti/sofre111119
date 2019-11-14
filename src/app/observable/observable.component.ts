@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
+import {filter, map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-observable',
@@ -36,9 +37,12 @@ export class ObservableComponent implements OnInit {
       (erreur) => console.log(erreur),
       () => console.log('I finish with that')
     );
-    observable.subscribe(
+    observable.pipe(
+      filter( (val) => val % 2 === 0),
+      map((val) => val * 3)
+    ).subscribe(
       (val) => {
-      console.log(val * 2);
+      console.log(val);
     });
     this.imageObservable = new Observable<string>(
       (observer) => {

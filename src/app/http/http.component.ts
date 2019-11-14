@@ -8,11 +8,9 @@ const API_LINK = 'https://jsonplaceholder.typicode.com/users';
   styleUrls: ['./http.component.css']
 })
 export class HttpComponent implements OnInit {
-
   constructor(
     private http: HttpClient
   ) { }
-
   ngOnInit() {
     this.http.get(API_LINK).subscribe(
       (donnees) => {
