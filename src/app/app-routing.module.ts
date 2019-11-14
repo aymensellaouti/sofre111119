@@ -10,6 +10,8 @@ import {FrontComponent} from './front/front.component';
 import {AdminComponent} from './admin/admin.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {LoginComponent} from './login/login.component';
+import {AddPersonneComponent} from './cv/add-personne/add-personne.component';
+import {LoginGuard} from './guards/login-guard';
 
 
 const routes: Routes = [
@@ -23,6 +25,7 @@ const routes: Routes = [
   {
     path: 'cv', children: [
       {path: '', component: CvComponent},
+      {path: 'add', component: AddPersonneComponent, canActivate: [LoginGuard]},
       {path: ':id', component: DetailCvComponent},
     ]
   },

@@ -27,11 +27,6 @@ export class CvService {
     return this.http.get<Personne>(API_LINK + `/${id}`);
   }
   deletePersonneById(id): Observable<Personne> {
-    const token = localStorage.getItem('token');
-    if (token) {
-      const headers = new HttpHeaders().set('Authorization', token);
-      return this.http.delete<Personne>(API_LINK + `/${id}`, {headers});
-    }
     return this.http.delete<Personne>(API_LINK + `/${id}`);
   }
 }
