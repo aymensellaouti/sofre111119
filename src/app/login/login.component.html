@@ -1,9 +1,12 @@
 <form #formulaire= "ngForm">
   <label for="email">Email</label>
-  <input email class="form-control" id="email" type="text" ngModel name="email">
+  <input email #email="ngModel" required class="form-control" id="email" type="text" ngModel name="email">
+  <div class="alert alert-danger" *ngIf="email.invalid && email.touched">
+    Veuillez renseignez un email valid
+  </div>
   <label for="pwd">Password</label>
   <input id="pwd" required class="form-control" type="password" ngModel name="password">
 </form>
-<button (click)="login(formulaire)" class="btn btn-primary">
+<button [disabled]="formulaire.invalid" (click)="login(formulaire)" class="btn btn-primary">
   Login
 </button>

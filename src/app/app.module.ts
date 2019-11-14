@@ -29,6 +29,9 @@ import { AdminComponent } from './admin/admin.component';
 import {FrontComponent} from './front/front.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './login/login.component';
+import { ObservableComponent } from './observable/observable.component';
+import { HttpComponent } from './http/http.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -57,12 +60,15 @@ import { LoginComponent } from './login/login.component';
     AdminComponent,
     FrontComponent,
     NotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    ObservableComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
