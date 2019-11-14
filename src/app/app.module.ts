@@ -25,6 +25,10 @@ import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { ParamsComponent } from './params/params.component';
 import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
+import { AdminComponent } from './admin/admin.component';
+import {FrontComponent} from './front/front.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +53,11 @@ import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
     HeaderComponent,
     RouterSimulatorComponent,
     ParamsComponent,
-    DetailCvComponent
+    DetailCvComponent,
+    AdminComponent,
+    FrontComponent,
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

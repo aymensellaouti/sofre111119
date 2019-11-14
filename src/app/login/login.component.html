@@ -1,0 +1,9 @@
+<form #formulaire= "ngForm">
+  <label for="email">Email</label>
+  <input email class="form-control" id="email" type="text" ngModel name="email">
+  <label for="pwd">Password</label>
+  <input id="pwd" required class="form-control" type="password" ngModel name="password">
+</form>
+<button (click)="login(formulaire)" class="btn btn-primary">
+  Login
+</button>

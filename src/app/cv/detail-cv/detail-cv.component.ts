@@ -25,6 +25,11 @@ export class DetailCvComponent implements OnInit {
         }
       }
     );
+    this.activatedRoute.queryParams.subscribe(
+      (queryparams) => {
+        console.log(queryparams);
+      }
+    );
   }
 
 }
