@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Personne} from '../Model/personne';
 import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-const API_LINK = 'http://localhost:3000/api/personnes';
+const API_LINK = 'https://apilb.tridevs.net/api/personnes';
 @Injectable({
   providedIn: 'root'
 })
